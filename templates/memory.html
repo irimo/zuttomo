@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<title>ズッ友達 | 思い出登録</title>
+<link href="./zuttomo.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="./zuttomo.js"></script>
+</head>
+<body>
+<form method="POST" action="./memory.php?id=<%=USER_ID=>&friend=<%=FRIEND_ID=>&mode=regist">
+<%=FRIEND_NAME=>さんとの思い出をもっと。<br />
+思い出の<select name="memory_type">
+<%=OPTION_VALUE_MEMORY=>
+</select>は、<br />
+<textarea name="memory_text">
+</textarea><br />
+という事もありました。<br />
+<br />
+<input type="submit" value="追加" />
+</form>
+<%=FOOTER=>
+</body>
+</html>
